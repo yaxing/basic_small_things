@@ -10,7 +10,7 @@ import java.util.List;
  * @author Yaxing Chen (yangcongknight@gmail.com)
  * @complexity O(N)
  */
-public class PerOrderBST {
+public class RecoverPreOrderBST {
     
     static class Node {
 	int value;
