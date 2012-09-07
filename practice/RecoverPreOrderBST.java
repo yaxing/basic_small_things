@@ -58,14 +58,11 @@ public class RecoverPreOrderBST {
 		    if(head.value < curValue 
 			    && stack.get(0).value > curValue) {
 			head.right = tmp;
-			head = null;
 			break;
 		    }
 		    head = stack.remove(0);
 		}
-		if(head != null) {
-		    head.right = tmp;
-		}
+		head.right = tmp;
 	    }
 	    stack.add(0, tmp);
 	}
